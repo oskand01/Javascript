@@ -7,10 +7,10 @@ function Book (title, topic, pages, isbn) {
   this.pages = pages;
   this.isbn = isbn;
   this.getBookInfo = () => console.log (
-    "Book: " + title + "\n" +
-    "Topic: " + topic + "\n" +
-    "Pages: " + pages + "\n" + 
-    "ISBN: " + isbn + "\n"
+    "Book: " + this.title + "\n" +
+    "Topic: " + this.topic + "\n" +
+    "Pages: " + this.pages + "\n" + 
+    "ISBN: " + this.isbn + "\n"
   );
 }
 
