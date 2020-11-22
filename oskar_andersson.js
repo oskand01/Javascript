@@ -7,10 +7,7 @@ function Book (title, topic, pages, isbn) {
   this.pages = pages;
   this.isbn = isbn;
   this.getBookInfo = () => console.log (
-    `Book: ${this.title} \n
-    Topic: ${this.topic} \n
-    Pages: ${this.pages} \n
-    ISBN: ${this.isbn} \n`
+    `Book: ${this.title} \nTopic: ${this.topic} \nPages: ${this.pages} \nISBN: ${this.isbn} \n`
   );
 }
 
@@ -27,15 +24,15 @@ const newBooks = prompt("How many books would you like to add?");
 //Checkpoint 4
 if (newBooks > 0) {
   for(let i = 1; i <= newBooks; i++) {
-    const title = prompt("Book " + i + "\nThe title of the book: ");
-    const subject = prompt("Book " + i + "\nThe subject of the book: ");
-    const pages = prompt("Book " + i + "\nNumber of pages: ");
-    const isbn = prompt("Book " + i + "\nISBN: ");
+    const title = prompt(`Book ${i} \nThe title of the book:`);
+    const subject = prompt(`Book ${i} \nThe subject of the book:`);
+    const pages = prompt(`Book ${i} \nNumber of pages:`);
+    const isbn = prompt(`Book ${i} \nISBN:`);
 
 //Checkpoint 5
     books.push(new Book(title, subject, pages, isbn));
   }
-  console.log(newBooks + " new book(s) added.\n\n");
+  console.log(`${newBooks} new book(s) added.\n\n`);
 }
 
 //Checkpoint 6
