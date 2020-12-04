@@ -53,6 +53,4 @@ function validateLoginInfo() {
   return false;
 }
 
-window.addEventListener("DOMContentLoaded", (event) => {
-  init();
-});
+window.addEventListener("DOMContentLoaded", init());
